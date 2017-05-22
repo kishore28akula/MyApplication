@@ -75,7 +75,8 @@ public class DrivingGraph extends AppCompatActivity implements View.OnClickListe
     Uri imageuri, imageurii;
     private ProgressDialog pDialog;
     String pathtest, pathtest1;
-    //tesing gitinfo
+    //tesing gitinfov
+    //checking pushinfomation..
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
