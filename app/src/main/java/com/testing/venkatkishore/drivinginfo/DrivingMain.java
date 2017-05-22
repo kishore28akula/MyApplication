@@ -18,7 +18,7 @@ public class DrivingMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DrivingMain.this,DrivingGraph.class));
-                Toast.makeText(DrivingMain.this, "Haiiiiiiii    ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DrivingMain.this, "Haiiiiiiii  ch  ", Toast.LENGTH_SHORT).show();
             }
         });
     }
