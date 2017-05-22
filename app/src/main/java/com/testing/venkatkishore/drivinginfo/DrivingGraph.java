@@ -75,7 +75,7 @@ public class DrivingGraph extends AppCompatActivity implements View.OnClickListe
     Uri imageuri, imageurii;
     private ProgressDialog pDialog;
     String pathtest, pathtest1;
-   
+   String tesing;
   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
