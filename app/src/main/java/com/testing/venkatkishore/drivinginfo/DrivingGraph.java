@@ -61,7 +61,7 @@ public class DrivingGraph extends AppCompatActivity implements View.OnClickListe
     List<String> timelist = new ArrayList<String>();
     String currentTime;
     SimpleDateFormat sdf;
-
+// checking updates of git sample.
     //    Map mMap = new HashMap();
     HashMap<String, String> mMap = new HashMap<String, String>();
     ArrayList<String> offdutyarray, sleeparray, drivingarray, ondutyarray;
