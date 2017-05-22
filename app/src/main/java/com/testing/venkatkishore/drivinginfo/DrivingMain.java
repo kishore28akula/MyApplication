@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class DrivingMain extends AppCompatActivity {
     Button btn_reg;
@@ -17,6 +18,7 @@ public class DrivingMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DrivingMain.this,DrivingGraph.class));
+                Toast.makeText(DrivingMain.this, "Haiiiiiiii", Toast.LENGTH_SHORT).show();
             }
         });
     }
