@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testing.venkatkishore.drivinginfo.StepGraphTableinfo">
+
+    <TextView
+        android:text="Driving Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="#44ee"
+        android:layout_below="@+id/headerdriving"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linear11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:text="Driver Name: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textdr"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:text="Venkat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdrivername"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:text="License Id: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tetxli"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:text="IHDELDKLDK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtlicense"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdate"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headerdriving"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#22aa"
+        android:layout_below="@+id/linear11"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="Start time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="End time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="No of Hours"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:text="State"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5s"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

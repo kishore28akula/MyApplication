@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.testing.venkatkishore.drivinginfo.DrivingGraph">
+
+    <LinearLayout
+        android:id="@+id/linera"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/stepChartExamplePlot"
+        android:layout_alignBottom="@+id/stepChartExamplePlot">
+     <!--  <TextView android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Hours"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView android:id="@+id/off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off Duty:"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sleep:"
+            android:textSize="16dp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Driving:"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/onDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  On Duty:"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/stepChartExamplePlot"
+        android:layout_toStartOf="@+id/linera"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="Table Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabeldata"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:text="Off Duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butoffduty"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butsleep"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Driving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butdriving"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="On Duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butonduty"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/stepChartExamplePlot"
+        style="@style/APDefacto.Dark"
+        android:layout_width="500dp"
+        android:layout_height="275dp"
+        ap:title="Driving Information "
+        ap:domainTitle="Time (hr)"
+        ap:rangeTitle="Driver state"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

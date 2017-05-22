@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/headerdriving"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:text="Time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_starttime"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="End time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_endtime"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="No of Hours"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_hourinfo"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="State"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_state"
+            android:gravity="left"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
